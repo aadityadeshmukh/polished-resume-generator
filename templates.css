@@ -1,0 +1,509 @@
+/* Resume Template Base Styles */
+.resume-preview {
+  --template-accent-color: #1e3a8a;
+  --template-font-family: 'Inter', sans-serif;
+  
+  font-family: var(--template-font-family);
+  background-color: #ffffff;
+  width: 8.5in;
+  min-height: 11in;
+  margin: 0 auto;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  color: #1f2937;
+  transition: transform 0.2s ease-out, background-color 0.3s;
+  transform-origin: top center;
+  /* Reset some inner margins */
+  line-height: 1.5;
+}
+
+.resume-preview * {
+  box-sizing: border-box;
+}
+
+/* --------------------------------------------------------------------------
+   TEMPLATE 1: MODERN PROFESSIONAL (Screenshot 1)
+   -------------------------------------------------------------------------- */
+.template-modern {
+  padding: 0.75in;
+}
+
+.template-modern .resume-name {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 4px 0;
+  letter-spacing: -0.02em;
+}
+
+.template-modern .resume-title {
+  font-size: 18px;
+  color: var(--template-accent-color);
+  font-weight: 500;
+  margin: 0 0 16px 0;
+}
+
+.template-modern .contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--template-accent-color);
+}
+
+.template-modern .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.template-modern .contact-icon {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+.template-modern .section-block {
+  margin-bottom: 24px;
+}
+
+.template-modern .section-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--template-accent-color);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 0 12px 0;
+}
+
+.template-modern .summary-text {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #374151;
+}
+
+.template-modern .experience-item,
+.template-modern .education-item {
+  margin-bottom: 16px;
+}
+
+.template-modern .item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.template-modern .item-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.template-modern .item-date {
+  font-size: 12px;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.template-modern .item-subtitle {
+  font-size: 14px;
+  color: var(--template-accent-color);
+  margin: 0 0 8px 0;
+}
+
+.template-modern .item-highlights {
+  font-size: 13px;
+  color: #374151;
+  padding-left: 16px;
+  margin: 0;
+}
+
+.template-modern .item-highlights li {
+  margin-bottom: 4px;
+}
+
+.template-modern .skills-list {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #374151;
+}
+
+
+/* --------------------------------------------------------------------------
+   TEMPLATE 2: PROFESSIONAL RESUME BUILDER (Screenshot 2 - Rivera)
+   -------------------------------------------------------------------------- */
+.template-professional {
+  padding: 0;
+  background-color: #f8fafc; /* Light gray outer background */
+}
+
+/* We create an inner white card for this one */
+.template-professional .resume-card {
+  background-color: #ffffff;
+  margin: 0.5in;
+  padding: 0.5in;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.template-professional .header-block {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.template-professional .profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #f3f4f6;
+}
+
+.template-professional .header-content {
+  flex: 1;
+}
+
+.template-professional .resume-name {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 4px 0;
+}
+
+.template-professional .resume-title {
+  font-size: 18px;
+  color: var(--template-accent-color);
+  font-weight: 500;
+  margin: 0 0 12px 0;
+}
+
+.template-professional .contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.template-professional .section-block {
+  margin-bottom: 32px;
+}
+
+.template-professional .section-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--template-accent-color);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 16px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.template-professional .summary-text {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #334155;
+}
+
+/* Timeline for Experience */
+.template-professional .experience-list {
+  position: relative;
+  padding-left: 20px;
+}
+.template-professional .experience-list::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  bottom: 0;
+  left: 5px;
+  width: 2px;
+  background-color: #e2e8f0;
+}
+
+.template-professional .experience-item {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.template-professional .experience-item::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -20px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--template-accent-color);
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 1px #e2e8f0;
+}
+
+.template-professional .experience-item.faded-dot::before {
+  background-color: #cbd5e1;
+}
+
+.template-professional .item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2px;
+}
+
+.template-professional .item-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0;
+}
+
+.template-professional .item-date {
+  font-size: 11px;
+  color: #64748b;
+  background-color: #f1f5f9;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.template-professional .item-subtitle {
+  font-size: 13px;
+  color: var(--template-accent-color);
+  font-weight: 500;
+  margin: 0 0 8px 0;
+}
+
+.template-professional .item-highlights {
+  font-size: 13px;
+  color: #475569;
+  padding-left: 16px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.template-professional .item-highlights li {
+  margin-bottom: 6px;
+}
+
+/* Single Column stack for Bottom Section */
+.template-professional .bottom-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 24px;
+}
+
+.template-professional .education-item {
+  margin-bottom: 16px;
+}
+.template-professional .education-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 2px 0;
+}
+.template-professional .education-school {
+  font-size: 13px;
+  color: #475569;
+  margin: 0 0 4px 0;
+}
+.template-professional .education-date {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+/* Pill Skills */
+.template-professional .skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.template-professional .skill-pill {
+  font-size: 12px;
+  color: var(--template-accent-color);
+  background-color: rgba(0,0,0, 0.04);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+
+/* --------------------------------------------------------------------------
+   TEMPLATE 3: EXECUTIVE RESUME BUILDER (Screenshot 3 - Whittaker)
+   -------------------------------------------------------------------------- */
+.template-executive {
+  padding: 0.85in 0.75in;
+  /* Always force serif for this specific layout if desired, 
+     but we'll let the typography selector control it largely. 
+     The mock shows a prominent Serif font. */
+}
+
+.template-executive .header-block {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.template-executive .resume-name {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 12px 0;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.template-executive .contact-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 11px;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.template-executive .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.template-executive .section-block {
+  margin-bottom: 20px;
+}
+
+.template-executive .section-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--template-accent-color);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 0 12px 0;
+  border-top: 1px solid #d1d5db;
+  border-bottom: 1px solid #d1d5db;
+  padding: 6px 0;
+}
+
+.template-executive .summary-text {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #374151;
+}
+
+.template-executive .experience-item {
+  margin-bottom: 20px;
+}
+
+.template-executive .item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2px;
+}
+
+.template-executive .item-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.template-executive .item-date {
+  font-size: 12px;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.template-executive .item-subtitle {
+  font-size: 13px;
+  color: var(--template-accent-color);
+  font-style: italic;
+  margin: 0 0 8px 0;
+}
+.template-executive .item-location {
+  font-size: 11px;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  float: right;
+}
+
+.template-executive .item-highlights {
+  font-size: 13px;
+  color: #374151;
+  padding-left: 16px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.template-executive .item-highlights li {
+  margin-bottom: 6px;
+}
+
+/* Education in Executive */
+.template-executive .education-item {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.template-executive .edu-left {
+  flex: 1;
+}
+.template-executive .education-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 2px 0;
+}
+.template-executive .education-school {
+  font-size: 13px;
+  color: var(--template-accent-color);
+  font-style: italic;
+  margin: 0;
+}
+.template-executive .education-date {
+  font-size: 12px;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+/* Skills/Competencies in Executive - 2 column */
+.template-executive .skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.template-executive .skills-list-exec {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.template-executive .skills-list-exec li {
+  position: relative;
+  padding-left: 16px;
+  font-size: 13px;
+  color: #374151;
+  margin-bottom: 6px;
+}
+.template-executive .skills-list-exec li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #9ca3af;
+}
+
+/* Shared utilities for templates */
+.hidden-section {
+  display: none !important;
+}
